@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> Real Time Damage Detection System | Home</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Storage ui kit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smoth-scrolling -->
+    <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/script.js"></script>
+    <!--responsive tab script here-->
+    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion           
+                width: 'auto', //auto or any width like 600px
+                fit: true // 100% fit in a container
+            });
+        });
+    </script>
+    <!--//resposive tab-->
+    <script>$(document).ready(function(c) {
+	$('.cros').on('click', function(c){
+		$('.user-profile').fadeOut('slow', function(c){
+	  		$('.user-profile').remove();
+		});
+	});	  
+});
+</script>
+    <!--video -->
+    <link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function() {
+
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function() {
+                    $(this).jPlayer("setMedia", {
+                        title: "Finding Nemo Teaser",
+                        m4v: "http://www.jplayer.org/video/m4v/Finding_Nemo_Teaser.m4v",
+                        poster: "http://www.jplayer.org/video/poster/Finding_Nemo_Teaser_640x352.png"
+                    });
+                },
+                swfPath: "../../dist/jplayer",
+                supplied: "m4v",
+                size: {
+                    width: "100%",
+                    height: "275px",
+                    cssClass: "jp-video-360p"
+                },
+                useStateClassSkin: true,
+                autoBlur: false,
+                smoothPlayBar: true,
+                keyEnabled: true,
+                remainingDuration: true,
+                toggleDuration: true
+            });
+        });
+        //]]>
+    </script>
+    <!--//video-->
+
+</head>
+
+<body>
+    <!--header start here-->
+    <div class="header">
+        <h3 class="main-head">Real Time Damage Detection System</h3>
+        <div class="head-strip">
+            <div class="head-strip-left">
+                <span class="joe"><img height="66px" width="66px" src="images/1.png" alt=""> </span>
+                <div class="joe-text">
+                    <h2>Welcome</h2>
+                    <p>Please Login To Continue</p>
+                </div>
+            </div>
+            <div class="head-strip-right">
+                <ul class="strip-date">
+                    <li><span class="cal"> </span>
+                        <h4 id="dt"></h4>
+                    </li>
+                    <!--get date-->
+                    <script type="text/javascript">
+                        var d = new Date();
+                        document.getElementById("dt").innerHTML = d.toLocaleDateString();
+                    </script>
+                    <li><span class="clock"> </span>
+                        <h4 id="tm"></h4>
+                    </li>
+                    <!--get time-->
+                    <script type="text/javascript">
+                        var d = new Date();
+                        document.getElementById("tm").innerHTML = d.toLocaleTimeString();
+                    </script>
+                </ul>
+                <div class="settiing">
+                    <div class="menu2">
+                        <span class="menu-at-on"><img src="images/setter.png" alt=""> </span>
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                        <script>
+                            $("span.menu-at-on").click(function() {
+                                $(".menu2 ul").slideToggle(500, function() {});
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+
+        <!--login start here-->
+        <div class="login">
+            <h4> LOGIN </h4>
+            <form>
+                <div class="login-name">
+                    <span class="login-user"> </span>
+                    <input type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" />
+                </div>
+                <div class="login-password">
+                    <span class="login-key"> </span>
+                    <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
+                </div>
+                <div class="remember">
+                    <span class="checkbox1">
+                        <label class="checkbox"><input type="checkbox" checked=""><i> </i>Remember me</label>
+                    </span>
+                    <div class="send">
+                        <input type="submit" value="LOGIN">
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </form>
+        </div>
+
+        <!--login end here-->
+
+
+        <!--banner start here-->
+        <div class="banner">
+            <div class="bann-left">
+                <span class="bann-part"> </span>
+                <div class="bann-text">
+                    <h1>Know More About RTDDS?</h1>
+                    <div style="align-content: center">
+                        <img style="border-style: outset; align-content: center" height="350px" width="80%" src="images/rtdds.png" alt="">
+                    </div>
+                    <p>remove image add column text here</p>
+                </div>
+            </div>
+            <div class="bann-rit">
+                <a href="#">EXPLORE</a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+        <!--map start here-->
+        <div class="map">
+            <div class="login">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email : <a>info@fcrit.ac.in</a></li>
+                    <li>Website : <a>fcrit.ac.in</a></li>
+                    <li>Call : 022-2345678</li>
+                </ul>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7321043734355!2d72.98951561446793!3d19.075512687088153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6cae0d8c5ab%3A0xbbf4481d662ca2d8!2sFr.+C.+Rodrigues+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1538075639300" width="400" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="location">
+            <div class="col-md-6 rids">
+                <span class="localpointer"> </span>
+                <div class="rid-text">
+                    <h3>FCRIT</h3>
+                    <p>Sector 9A,Vashi</p>
+                    <p>India<p>
+                            <p></p>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+    </div>
+    </div>
+    <div class="clearfix"> </div>
+    <div class="clearfix"> </div>
+    <div class="copy-right">
+        <p>© 2018 Developed by Tejesh Jadhav </p>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+    </div>
+    <!--header bottom end here-->
+    <!--header end here-->
+</body>
+
+</html>
