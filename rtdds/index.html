@@ -130,9 +130,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="menu2">
                         <span class="menu-at-on"><img src="images/setter.png" alt=""> </span>
                         <ul>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Log Out</a></li>
+                            <li><a href="Profile.php">Profile</a></li>
+                            <li><a href="Login.php">Login</a></li>
+                            <li><a href="Logout.php">Log Out</a></li>
                         </ul>
                         <script>
                             $("span.menu-at-on").click(function() {
@@ -149,14 +149,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!--login start here-->
         <div class="login">
             <h4> LOGIN </h4>
-            <form>
+            <form action="Dashboard.php" method="post">
                 <div class="login-name">
                     <span class="login-user"> </span>
-                    <input type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" />
+                    <input id="username" type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" />
                 </div>
                 <div class="login-password">
                     <span class="login-key"> </span>
-                    <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
+                    <input id="password" type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
                 </div>
                 <div class="remember">
                     <span class="checkbox1">
@@ -178,15 +178,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bann-left">
                 <span class="bann-part"> </span>
                 <div class="bann-text">
-                    <h1>Know More About RTDDS?</h1>
+                    <h1>Know More About Real Time Damage Detection System?</h1>
                     <div style="align-content: center">
-                        <img style="border-style: outset; align-content: center" height="350px" width="80%" src="images/rtdds.png" alt="">
+                        <!--                        <img style="border-style: outset; align-content: center" height="350px" width="80%" src="images/rtdds.png" alt="">-->
                     </div>
-                    <p>remove image add column text here</p>
+                    <!--                    <p>remove image add column text here</p>-->
                 </div>
             </div>
             <div class="bann-rit">
-                <a href="#">EXPLORE</a>
+                <a href="Explore.php">EXPLORE</a>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -217,8 +217,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <div class="clearfix"> </div>
-    </div>
-    </div>
     <div class="clearfix"> </div>
     <div class="clearfix"> </div>
     <div class="copy-right">
