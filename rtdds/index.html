@@ -92,12 +92,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         //]]>
     </script>
     <!--//video-->
+    <style>
+        #backgroundImage{
+            z-index: 1;
+        }
+        #backgroundImage:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(images/background.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            opacity: 0.4;
+            filter:alpha(opacity=40);
+            height:100%;
+            width:100%;
+        }
+    </style>
 
 </head>
 
-<body>
+<body id="backgroundImage">
     <!--header start here-->
-    <div class="header">
+    <div class="header" style="opacity: 1">
         <h3 class="main-head">Real Time Damage Detection System</h3>
         <div class="head-strip">
             <div class="head-strip-left">
@@ -169,7 +190,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </form>
         </div>
-
         <!--login end here-->
 
 
