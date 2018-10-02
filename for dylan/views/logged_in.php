@@ -9,15 +9,25 @@ Try to close this browser tab and open it again. Still logged in! ;)-->
         <div class="navbar-brand">
             <a class="navbar-item"></a>
         </div>
-        <div class="navbar-menu">
-            <a href="index.php?logout" class="navbar-item">Logout</a>
+        <div class="send">
+            <a href="index.php?logout" class="navbar-item"><input type="submit" value="LOGOUT"></a>
         </div>
     </nav>
     <div>
-        <div>
-            <input type="text" placeholder="device name" id="device_name">
-            <input type="text" placeholder="device IP" id="device_ip">
-            <input type="button" id="device_create">
+        <h2> Create New Device</h2>
+        <br>
+        <div style="left:200px">
+        Device Name : <input type="text" placeholder="device name" id="device_name">
+        <br>
+            <br>
+            
+        Device IP : <input type="text" placeholder="device IP" id="device_ip">
+        <br>
+        </div>
+        <div class="send">
+        <br>
+            <input type="submit" id="device_create" value="Add Device">
+        </div>
             <script>
                 document.getElementById("device_create").addEventListener("click", function() {
                     var device_name = document.getElementById("device_name").value;
@@ -44,7 +54,7 @@ Try to close this browser tab and open it again. Still logged in! ;)-->
                 });
             </script>
         </div>
-    </div>
+<hr>
     <section class="section">
         <div class="container is-fluid">
             <canvas id="myChart" width="400" height="400"></canvas>
